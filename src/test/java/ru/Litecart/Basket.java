@@ -55,12 +55,12 @@ public class Basket {
         for (int x = item; x>0; x--) {
             if (item != 0) {
                 driver.findElement(By.name("remove_cart_item")).click();
-            }
-        }
-        timeOf();
-        wait.until(ExpectedConditions.stalenessOf(
+                timeOf();
+                wait.until(ExpectedConditions.stalenessOf(
                 driver.findElement(By.cssSelector("table.dataTable"))));
         timeOn();
+            }
+        }
     }
 
     public void  timeOf() {
