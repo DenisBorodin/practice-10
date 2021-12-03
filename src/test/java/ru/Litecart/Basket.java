@@ -57,8 +57,8 @@ public class Basket {
                 driver.findElement(By.name("remove_cart_item")).click();
                 timeOf();
                 wait.until(ExpectedConditions.stalenessOf(
-                driver.findElement(By.cssSelector("table.dataTable"))));
-        timeOn();
+                        driver.findElement(By.cssSelector("table.dataTable"))));
+                timeOn();
             }
         }
     }
